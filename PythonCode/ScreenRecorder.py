@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import pyautogui
+import sys
 
 SCREEN_SIZE = (1920, 1080)
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
@@ -17,3 +18,5 @@ while True:
 
 cv2.destroyAllWindows()
 out.release()
+
+sys.exit(0)
